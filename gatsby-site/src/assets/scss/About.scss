@@ -1,0 +1,47 @@
+.about-body{
+    background-color: $colorBackground;
+    width:100%;
+}
+
+#root{
+    background-color: $colorBackground;
+}
+
+.about-main-div{
+    margin-left: 2vw;
+}
+
+.about-div-sub{
+    margin-left: 0px;
+}
+
+.about-header-first{
+    font-family: GT Walsheim Pro;
+}
+
+.about-header-second{
+    color: rgba(0,0,0,0.75);
+    margin-bottom: 0px;
+    font-size:20px;
+    font-family: GT Walsheim Pro;
+}
+
+.about-div-second{
+    margin: 0px;
+    margin-left: 0px;
+}
+
+.about-img{
+    margin: 0px;
+    margin-top: 0px;
+}
+
+.about-div-third{
+    margin-right: 2vw;
+}
+
+.about-bottom-divr{
+    margin-left:2vw;
+    margin-right:2vw;
+    margin-top:40px;
+}

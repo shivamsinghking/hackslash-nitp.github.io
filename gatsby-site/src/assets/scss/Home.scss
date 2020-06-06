@@ -1,0 +1,139 @@
+$colorBackground: #ffffff;
+$colorPrimary: #60b6e9;
+@font-face {
+  font-family: "GT Walsheim Pro";
+  src: url(../fonts/GTWalsheimProRegular.ttf);
+}
+
+@font-face {
+  font-family: "Brandon Grotesque Black";
+  src: url(../fonts/brandon_grotesque.otf);
+}
+
+@font-face {
+  font-family: "Fake Serif";
+  src: url(../fonts/fake_serif.ttf);
+}
+
+.home-body {
+  background-color: $colorPrimary;
+  color: $colorBackground;
+  height: 90vh;
+  font-family: 'GT Walsheim Pro', sans-serif;
+
+  .home-main-row {
+    height: 100%;
+
+    .home-main-col {
+      align-self: center;
+      padding-left: 6rem;
+    }
+
+  }
+
+  .home-img {
+    width: 700px;
+    align-self: flex-end;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 4rem;
+  }
+
+  h5 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    white-space: pre;
+    margin-bottom: 2rem;
+
+  }
+
+  p {
+    white-space: pre;
+    font-size: 4rem;
+    line-height: 4rem;
+    z-index: 1;
+    margin-top: 8rem;
+    font-family: "Fake Serif", sans-serif;
+  }
+
+  .home-know-more {
+    text-decoration: none;
+    background-color: $colorBackground;
+    color: $colorPrimary;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    padding: 10px 24px;
+    font-weight: 700;
+    transition-duration: 0.4s;
+
+    &:hover {
+      box-shadow: rgba(20, 54, 73, 0.247) 0 2px 12px;
+      color: $colorPrimary;
+      text-decoration: none;
+    }
+
+  }
+
+  .home-head {
+    font-weight: 400;
+    font-size: 6.25rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  .home-body {
+    height: auto;
+
+    .home-main-row {
+      height: 100%;
+
+      .home-main-col {
+        align-self: center;
+        padding: 1rem 1rem;
+        text-align: center;
+
+
+        .home-know-more {
+          font-size: 4vw;
+          padding: 2vw 20vw;
+          margin-top: 4rem;
+        }
+      }
+
+    }
+
+    .home-img {
+      width: 95vw;
+      align-self: flex-end;
+      margin-right: 9px;
+    }
+
+    h3 {
+      font-size: 4.8vw;
+      font-weight: 400;
+      margin-bottom: 4rem;
+    }
+
+    h5 {
+      font-size: 5.6vw;
+      font-weight: 400;
+      margin-bottom: 4rem;
+
+    }
+
+    p {
+      font-size: 12vw;
+      line-height: 10vw;
+      margin-top: 4rem;
+    }
+
+    .home-head {
+      font-weight: 400;
+      font-size: 16vw;
+    }
+  }
+}
