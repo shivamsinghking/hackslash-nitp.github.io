@@ -34,7 +34,7 @@ const NavBar = (props) => {
                 </li>
 
                 <li id={'nav-certificates'}>
-                    <Link to={'/certi'}>
+                    <Link to={'/certificates'}>
                         Certificates
                     </Link>
                 </li>

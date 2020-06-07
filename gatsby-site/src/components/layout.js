@@ -24,7 +24,9 @@ const Layout = ({ props,children }) => {
       }
     }
   `)
- 
+ useEffect(()=>{
+   console.log(props);
+ })
    
   return (
   

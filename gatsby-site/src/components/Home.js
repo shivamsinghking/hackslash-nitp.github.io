@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { Link } from "gatsby";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import bg from '../assets/images/coderdojo.png';
@@ -7,9 +7,9 @@ import Layout from "../components/layout"
 import '../assets/scss/Home.scss';
 // import NavBar from './NavBar';
 const Home = (props) => {
-    useEffect(() => {
-        props.setPage('home');
-    });
+    // useEffect(() => {
+    //     props.setPage('home');
+    // });
 
     return (
       
