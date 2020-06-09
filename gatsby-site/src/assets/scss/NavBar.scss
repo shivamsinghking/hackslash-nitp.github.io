@@ -1,21 +1,6 @@
-$colorBackground: #ffffff;
-$colorPrimary: #60b6e9;
+@import './colors.scss';
+@import './fonts.scss';
 
-
-@font-face {
-  font-family: "GT Walsheim Pro";
-  src: url(../fonts/GTWalsheimProRegular.ttf);
-}
-
-@font-face {
-  font-family: "Brandon Grotesque Black";
-  src: url(../fonts/brandon_grotesque.otf);
-}
-
-@font-face {
-  font-family: "Fake Serif";
-  src: url(../fonts/fake_serif.ttf);
-}
 
 .nav {
   height: 10vh;

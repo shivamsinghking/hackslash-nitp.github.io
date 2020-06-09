@@ -1,6 +1,9 @@
+$colorBackground: #ffffff;
+$colorPrimary: #60b6e9;
 
 body{
     overflow-x: hidden;
+    background-color: $colorPrimary;
 }
 
 // html {

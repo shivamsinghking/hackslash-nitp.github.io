@@ -9,8 +9,8 @@ import React,{useEffect} from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import "./layout.scss";
+// import Header from "./header"
+import "../assets/scss/Layout.scss";
 import NavBar from './NavBar';
 import '../assets/scss/NavBar.scss'
 
@@ -24,8 +24,10 @@ const Layout = ({ props,children }) => {
       }
     }
   `)
+  
  useEffect(()=>{
-   console.log(props);
+   console.log(children);
+ 
  })
    
   return (
