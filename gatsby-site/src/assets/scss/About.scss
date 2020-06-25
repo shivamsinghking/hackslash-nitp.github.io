@@ -27,41 +27,60 @@ $colorPrimary: #60b6e9;
     background-color: $colorBackground;
 }
 
-.about-main-div{
-    margin-left: 2vw;
+.paragraph{
+ font-size: larger;
+ font-family: GT Walsheim Pro;
+}
+.heading_1{
+   h1{
+       margin-left: 1vw;
+   }
 }
 
-.about-div-sub{
-    margin-left: 0px;
-}
-
-.about-header-first{
+.heading_Meet{
+    font-size: larger;
     font-family: GT Walsheim Pro;
+    justify-content: center;
+}
+.contact{
+  width: 50vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  padding:30px;
+  margin-left:25vw;
+  margin-right: 15vw;
+  
 }
 
-.about-header-second{
-    color: rgba(0,0,0,0.75);
-    margin-bottom: 0px;
-    font-size:20px;
-    font-family: GT Walsheim Pro;
+
+.form-inline {  
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
 }
 
-.about-div-second{
-    margin: 0px;
-    margin-left: 0px;
+.form-inline label {
+  margin: 5px 10px 5px 0;
 }
 
-.about-img{
-    margin: 0px;
-    margin-top: 0px;
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border:none;
+  border-bottom: 1px solid #ddd;
 }
 
-.about-div-third{
-    margin-right: 2vw;
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+  float:right;
 }
-
-.about-bottom-divr{
-    margin-left:2vw;
-    margin-right:2vw;
-    margin-top:40px;
+::placeholder {
+  color: skyblue;
+  opacity: 1; /* Firefox */
 }
