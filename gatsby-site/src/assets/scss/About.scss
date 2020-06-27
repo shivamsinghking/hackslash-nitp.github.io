@@ -41,21 +41,23 @@ $colorPrimary: #60b6e9;
     font-size: larger;
     font-family: GT Walsheim Pro;
     justify-content: center;
+    margin-top: 2vh;
 }
 .contact{
-  width: 50vw;
+  
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   padding:30px;
-  margin-left:25vw;
-  margin-right: 15vw;
-  
+ 
+  width: 80vw;
+  margin-left:9vw;
+  margin-right: 3vw; 
 }
 
 
 .form-inline {  
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   align-items: stretch;
 }
 
@@ -70,6 +72,7 @@ $colorPrimary: #60b6e9;
   background-color: #fff;
   border:none;
   border-bottom: 1px solid #ddd;
+  align-items:stretch;
 }
 
 .form-inline button {
@@ -84,3 +87,64 @@ $colorPrimary: #60b6e9;
   color: skyblue;
   opacity: 1; /* Firefox */
 }
+
+
+.link_tags{
+  margin-left:20px;
+}
+.follow_txt{
+  color:#fff;
+   font-size: large;
+   margin-left: 3vw;
+   margin-bottom: 1px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .contact{
+    width: 80vw;
+    margin-left:9vw;
+    margin-right: 3vw; 
+  }
+  .footer{
+    margin-top:-6vh;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .contact{
+    width: 70vw;
+    margin-left:15vw;
+    margin-right: 15vw; 
+  }
+  .footer{
+    margin-top:-25vh;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .contact{
+    width: 40vw;
+    padding:30px;
+    margin-left:30vw;
+    margin-right: 15vw;
+    margin-bottom: -10vh;
+  }
+.footer{
+  margin-top: -9vh;
+}
+.links{
+  margin-left: 10vw;
+  margin-right: 1vw;
+  margin-top: -40px;
+}
+.follow_txt{
+  color:#fff;
+  font-size: large;
+}
+}
+
+// /* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {...}

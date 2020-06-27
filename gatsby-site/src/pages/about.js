@@ -1,11 +1,22 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "gatsby";
 import Layout from '../components/layout'
 import bg1 from '../assets/images/about_us/about-bg-1.svg';
 import bg2 from '../assets/images/about_us/about-bg-2.svg';
+import bg4 from '../assets/images/about_us/about-bg-4.svg';
 import contribution from '../assets/images/hall/contribution.svg';
 import githubIcon from '../assets/images/hall/githubIcon.svg';
+import linkedIn from '../assets/images/about_us/about-ic-linkedin.svg';
+import insta from '../assets/images/about_us/about-ic-insta.svg';
+import gitter from '../assets/images/about_us/about-ic-gitter.svg';
+import facebook from '../assets/images/about_us/about-ic-facebook.svg';
+import twitter from '../assets/images/about_us/about-ic-twitter.svg';
+import mail from '../assets/images/about_us/about-ic-mail.svg';
 import linkedinIcon from '../assets/images/hall/linkedinIcon.svg';
-import {Col, Container, Row,Form,Button} from "react-bootstrap";
+import dribble from '../assets/images/about_us/card-link-dribbble.svg';
+import meadium from '../assets/images/about_us/card-link-medium.svg';
+
+import {Col, Container, Row,Form,Button,Image} from "react-bootstrap";
 import '../assets/scss/About.scss';
 
 
@@ -98,20 +109,61 @@ import '../assets/scss/About.scss';
     <Row className="justify-content-center" style={{color:'skyblue'}}><h1>Contact Us</h1></Row>
   </Container>
   {/* //contact form */}
-  <div className="contact" style={{}}>
+  {/* // here flex-direction : column was not working so i had use rows and col */}
+  <div className="contact" style={{position:'relative'}}> 
   <form class="form-inline" action="/action_page.php">
-  
-  <label>
-    <input type="email"  placeholder="Enter password" name="_replyto" />
-  </label>
-  <input type="password" id="pwd" placeholder="Enter password" name="pswd" />
-  
-  <button type="submit">Submit</button>
+  <Col>
+ <Row xl={12} lg={12} md={12}> <input type="email"  placeholder="Email" name="email" /></Row>
+ <Row><input type="password" id="pwd" placeholder="Enter password" name="pswd" /></Row>
+ <Row> <input type="textArea" id="pwd" placeholder="Tell us about yourself" name="txt" /></Row>
+
+<Button type="submit" className="primary" >Send</Button> 
+  </Col>
 </form>
   </div>
+
+  {/* bottom_last_part  */}
+ <div className="footer" style={{marginTop:'-3vh',zIndex:-8,position:'absolute'}}>
+   <Image src={bg4} style={{zIndex:-4,position:'relative'}} fluid/>
+   <div className="links" style={{marginTop:'-12vh',position:'absolute',backgroundColor:'',display:'flex',flexDirection:'column'}}>
+     <div className="follow_txt">Follow us on</div>
+     <div style={{display:'flex',flexDirection:'row',marginBottom:''}}>
+     <Link to="#" className="link_tags">
+       <Image src={githubIcon} fluid/>
+     </Link>
+     <Link to="#" className="link_tags">
+       <Image src={linkedIn} fluid/>
+     </Link>
+     <Link to="#" className="link_tags">
+       <Image src={insta} fluid/>
+     </Link>
+     <Link to="#" className="link_tags">
+       <Image src={twitter} fluid/>
+     </Link>
+     <Link to="#" className="link_tags">
+       <Image src={gitter} fluid/>
+     </Link>
+     <Link to="#" className="link_tags">
+       <Image src={mail} fluid/>
+     </Link>
+     <Link to="#" className="link_tags">
+       <Image src={facebook}  fluid={true}/>
+     </Link>
+     <Link to="#" className="link_tags">
+       <Image src={dribble}  fluid={true}/>
+     </Link>
+     <Link to="#" className="link_tags">
+       <Image src={meadium}  fluid={true}/>
+     </Link>
+
+     </div>
+   </div>
+ </div>
   </Layout>
   )
 }
+
+
 
 const MemberCard = (props) => {
   return (
